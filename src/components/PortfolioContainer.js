@@ -1,14 +1,11 @@
-import React, {useState} from 'react';
-import './App.css';
-import About from './components/pages/About' //react
-import Blog from './components/pages/Blog'
-import Contact from './components/pages/Contact'
-import Home from './components/pages/Home'
-import NavTabs from './components/NavTabs'
+import React, { useState } from 'react';
+import NavTabs from './NavTabs';
+import Home from './pages/Home';
+import About from './pages/About';
+import Blog from './pages/Blog';
+import Contact from './pages/Contact';
 
-
-
-function App() {
+export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
@@ -36,5 +33,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
