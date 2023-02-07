@@ -4,7 +4,7 @@ import React from 'react';
 // We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs"> 
+    <ul className="nav nav-pills"> 
       <li className="nav-item">
         <a
           href="#home"
@@ -16,14 +16,14 @@ function NavTabs({ currentPage, handlePageChange }) {
           Home
         </a>
       </li>
-      <li className="nav-item">
+      <li className="nav nav-pills flex-column flex-sm-row">
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
           // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
           className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
         >
-          About
+          Portfolio
         </a>
       </li>
       <li className="nav-item">
@@ -33,7 +33,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
           className={currentPage === 'Blog' ? 'nav-link active' : 'nav-link'}
         >
-          Blog
+          Resume/Github
         </a>
       </li>
       <li className="nav-item">
