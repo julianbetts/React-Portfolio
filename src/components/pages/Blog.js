@@ -7,7 +7,7 @@ export default function Blog() {
       <ul class="list-group">
               
               
-                <li class="list-group-item list-group-item-primary"> <a href="https://open.spotify.com/" class="btn btn-primary">Resume</a></li>
+                <li class="list-group-item list-group-item-primary"> <a href="https://docs.google.com/document/d/1ZJQ-E4sMhLaV7h6t7rQf4o91oL871fWaJioastOR3iw/edit#heading=h.jl50kwavsrpr" class="btn btn-primary">Resume</a></li>
                 <li class="list-group-item list-group-item-primary"> <a href="https://github.com/julianbetts" class="btn btn-primary">Github</a></li>
 
               </ul>
